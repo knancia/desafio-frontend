@@ -1,10 +1,11 @@
 <template>
     <div id="searchComponent">
         <CustomInput 
-            class="customInput"
+            v-model="searchText"
         />
         <CustomButton
             text="P"
+            @click="store()"
         />
     </div>
 </template>
@@ -18,6 +19,31 @@
         components: {
             CustomInput,
             CustomButton
+        },
+        data() {
+            return {
+                searchText: ''
+            }
+        },
+        mounted() {
+            this.search();
+        },
+        methods: {
+            store() {
+                console.log("pastel")
+                console.log(this.searchText)
+            },  
+            async search() {
+                console.log('result1: ');
+                const result = await this.gapi.client.youtube.search.list({
+                    q: 'MrBeast',
+                    part: 'snippet',
+                    type: 'video',
+                    maxResults: 25,
+                    order: 'relevance'
+                });
+                console.log('result2: ', result);
+            }
         }
     }
 </script>

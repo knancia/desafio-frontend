@@ -16,22 +16,6 @@
         components: {
             VideoSuggestion
         },
-        mounted() {
-                this.pastel();
-        },
-        methods: {
-            async pastel() {
-                console.log('result1: ');
-                const result = await this.gapi.client.youtube.search.list({
-                    q: 'MrBeast',
-                    part: 'snippet',
-                    type: 'video',
-                    maxResults: 25,
-                    order: 'relevance'
-                });
-                console.log('result2: ', result);
-            }
-        }
     }
 </script>
 

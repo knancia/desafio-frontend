@@ -7,7 +7,7 @@ export const searchVideos = async (query) => {
         q: query,
         part: 'snippet',
         type: 'video',
-        maxResults: 5,
+        maxResults: 25,
         order: 'relevance'
     });
 

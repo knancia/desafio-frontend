@@ -5,13 +5,36 @@ Foi utilizado na realização deste projeto a framework Vue JS 3.
 ### Funcionalidades:
 
 - Pesquisa de vídeos na API do Youtube;
-- Listagem dos vdeos pesquisados;
+- Listagem dos vídeos pesquisados;
 - Visualização do vídeo selecionado;
-- Historico de buscas;
+- Histórico de buscas;
 - Responsividade para diferentes tipos de telas (mobile, tablet e desktop);
 - Gerenciamento de estado com `reactive` do Vue;
 
 
+- Tela inicial;
+
+![image](https://user-images.githubusercontent.com/39412587/216286380-1305394e-92f4-4d70-b3ee-e7f1faf919cf.png)
+
+- Reprodução de vídeo;
+
+![image](https://user-images.githubusercontent.com/39412587/216287553-f590b6f1-191b-4e61-be43-1196e8075448.png)
+
+- Histórico de pesquisa;
+
+![image](https://user-images.githubusercontent.com/39412587/216288282-17d37bb8-9133-4bbc-9c83-a001ed6c43e5.png)
+
+- Versão tablet;
+
+![image](https://user-images.githubusercontent.com/39412587/216288558-f2542e50-7705-4ddb-950a-9726d8b97518.png)
+
+- Versão mobile - menu fechado;
+
+![image](https://user-images.githubusercontent.com/39412587/216288833-f0ab5eba-1324-4222-8c26-f61160a02a5a.png)
+
+- Versão mobile - menu aberto;
+
+![image](https://user-images.githubusercontent.com/39412587/216289117-1c33bd65-1b97-41d7-8c5c-f569a1d2b477.png)
 
 
 ---------------------------------------------------------------------------------------------------------------

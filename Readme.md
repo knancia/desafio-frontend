@@ -1,3 +1,21 @@
+Projeto feito com a API do Youtube.
+Foi utilizado na realização deste projeto a framework Vue JS 3.
+
+
+### Funcionalidades:
+
+- Pesquisa de vídeos na API do Youtube;
+- Listagem dos vdeos pesquisados;
+- Visualização do vídeo selecionado;
+- Historico de buscas;
+- Responsividade para diferentes tipos de telas (mobile, tablet e desktop);
+- Gerenciamento de estado com `reactive` do Vue;
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
 # 🏁 Desafio de programação - Vaga Front-End 🏁
 
 **Este teste tem por objetivos principais avaliar:**
@@ -32,10 +50,10 @@ O layout da **home** não precisa ser exatamente como o do wireframe. Você pode
 
 **Requisitos esperados na entrega do teste**
 
-- [ ] Fornecer um mecanismo para o usuário poder pesquisar vídeos
-- [ ] Possuir home page que exiba algum conteúdo interessante para uma plataforma de vídeos
-- [ ] Fornecer uma estrutura de gerência do estado da aplicação
-- [ ] Possuir histórico das buscas realizadas (persistir localmente)
+- [x] Fornecer um mecanismo para o usuário poder pesquisar vídeos
+- [x] Possuir home page que exiba algum conteúdo interessante para uma plataforma de vídeos
+- [x] Fornecer uma estrutura de gerência do estado da aplicação
+- [x] Possuir histórico das buscas realizadas (persistir localmente)
 
 **Requisitos extras** 
 

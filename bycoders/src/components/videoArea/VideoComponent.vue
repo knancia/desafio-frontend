@@ -1,14 +1,12 @@
 <template>
-    <div id="videoComponent">
-        <iframe  
-            class="mainVideo"
-            :src="link" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen
-        ></iframe>
-    </div>
+    <iframe  
+        class="mainVideo"
+        :src="link" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen
+    ></iframe>
 </template>
 
 <script>
@@ -24,6 +22,6 @@
 <style>
     .mainVideo {
         width: 100%;
-        aspect-ratio: 16/9;
+        height: 100%;
     }
 </style>

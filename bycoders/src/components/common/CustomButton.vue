@@ -1,5 +1,5 @@
 <template>
-    <button class="customButton"> {{ text }}  </button>
+    <button class="customButton"> <fa icon="magnifying-glass" style="transform: rotateY(180deg);"/>  </button>
 </template>
 
 <script>

@@ -1,10 +1,7 @@
-<template>
+<template >
     <TopBar/>
-    <div class="body">
-        <div class="containerVideoHistoric">
-            <VideoArea/>
-            <HistoricVideo v-if="this.gapi"/>
-        </div>
+    <div class="body" v-if="this.gapi">
+        <VideoArea class="videoArea"/>
         <MoreVideo/>
     </div>
 </template>
@@ -12,7 +9,6 @@
 <script>
     import TopBar from './layout/TopBar.vue';
     import VideoArea from './layout/VideoArea.vue';
-    import HistoricVideo from './layout/HistoricVideo.vue';
     import MoreVideo from './layout/MoreVideo.vue';
     import initClient from '@/Services/GoogleClient';
 
@@ -21,18 +17,16 @@
         components: {
             TopBar,
             VideoArea,
-            HistoricVideo,
             MoreVideo
         },
         data() {
             return {
                  gapi: undefined
             }
-        },
+        },  
         methods: {
             async fetchData() {
                 this.gapi = await initClient()
-                console.log('this.gapi: ', this.gapi)
             }
         },
         created() {
@@ -53,13 +47,26 @@
 
     .body {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-color: #171616;
         color: white;
         padding-top: 100px;
+        padding-bottom: 30px;
     }
 
-    .containerVideoHistoric {
+    
+    @media (max-width: 800px) {
+        .body {
+            width: 100%;
+            height: 100%;
+            background-color: #171616;
+            color: white;
+            padding-top: 0px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .videoArea {
         display: flex;
         align-items: center;
         justify-content: space-around;

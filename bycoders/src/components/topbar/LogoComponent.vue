@@ -13,7 +13,6 @@
 <style scoped>
     #LogoComponent {
         width: 350px;
-        background-color: red;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -21,5 +20,19 @@
     img {
         width: 200px;
         margin-right: 15px;
+    }
+
+    @media (max-width: 800px) {
+        #LogoComponent {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        img {
+            width: 200px;
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
 </style>

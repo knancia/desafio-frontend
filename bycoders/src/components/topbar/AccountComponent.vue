@@ -1,7 +1,9 @@
 <template>
     <div id="accountComponent">
-        <a href="#1">Criar Conta</a>
-        <a href="#1">Fazer Login</a>
+        <button class="btnLogin" type="button"> 
+            <fa icon="user"/> 
+            <span>Login</span> 
+        </button>
     </div>
 </template>
 
@@ -17,9 +19,37 @@
 <style>
     #accountComponent {
         width: 350px;
-        background-color: red;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: flex-end;
+    }
+
+    @media (max-width: 800px) {
+        #accountComponent {
+            width: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            bottom: 15px;
+            right: 78px;
+        }
+    }
+    .btnLogin {
+        background-color: #343434;
+        color: #cfcfcf;
+        width: 100px;
+        height: 30px;
+        border-radius: 7px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .btnLogin span {
+        font-size: 12px;
+        font-weight: bold;
     }
 </style>

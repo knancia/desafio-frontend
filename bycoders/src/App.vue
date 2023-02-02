@@ -3,7 +3,7 @@
     <div class="body">
         <div class="containerVideoHistoric">
             <VideoArea/>
-            <HistoricVideo/>
+            <HistoricVideo v-if="this.gapi"/>
         </div>
         <MoreVideo/>
     </div>
@@ -14,6 +14,7 @@
     import VideoArea from './layout/VideoArea.vue';
     import HistoricVideo from './layout/HistoricVideo.vue';
     import MoreVideo from './layout/MoreVideo.vue';
+    import initClient from '@/Services/GoogleClient';
 
     export default {
         name: 'App',
@@ -22,8 +23,23 @@
             VideoArea,
             HistoricVideo,
             MoreVideo
+        },
+        data() {
+            return {
+                 gapi: undefined
+            }
+        },
+        methods: {
+            async fetchData() {
+                this.gapi = await initClient()
+                console.log('this.gapi: ', this.gapi)
+            }
+        },
+        created() {
+            this.fetchData()
         }
     }
+
 </script>
 
 <style>

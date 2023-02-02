@@ -6,24 +6,6 @@
             title="Video 01"
             channel="Canal 01"    
         />
-        <VideoSuggestion
-            src="https://via.placeholder.com/150x84"
-            alt="Sugestão de video"
-            title="Video 02"
-            channel="Canal 02"    
-        />
-        <VideoSuggestion
-            src="https://via.placeholder.com/150x84"
-            alt="Sugestão de video"
-            title="Video 03"
-            channel="Canal 03"    
-        />
-        <VideoSuggestion
-            src="https://via.placeholder.com/150x84"
-            alt="Sugestão de video"
-            title="Video 04"
-            channel="Canal 04"    
-        />
     </div>
 </template>
 
@@ -33,7 +15,7 @@
     export default {
         components: {
             VideoSuggestion
-        }
+        },
     }
 </script>
 
